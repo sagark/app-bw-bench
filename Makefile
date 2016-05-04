@@ -16,5 +16,8 @@ setup:
 logger: buildpcm
 	g++ -std=c++0x -o perf_log perf_log.cc $(PCMLIBS) -lpthread
 
+buildbandwidth:
+	cd bandwidth-1.2.1 && make bandwidth64
 
-
+saturate:
+	./saturate.sh

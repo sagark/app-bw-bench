@@ -1,1 +1,10 @@
 perf_log
+bandwidth-1.2.1/BMP.o
+bandwidth-1.2.1/BMP64.a
+bandwidth-1.2.1/BMPGraphing.o
+bandwidth-1.2.1/BMPGraphing64.a
+bandwidth-1.2.1/bandwidth64
+bandwidth-1.2.1/font.o
+bandwidth-1.2.1/main.o
+bandwidth-1.2.1/minifont.o
+bandwidth-1.2.1/routines-x86-64bit.o
