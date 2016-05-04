@@ -21,3 +21,6 @@ buildbandwidth:
 
 saturate:
 	./saturate.sh
+
+endsat:
+	killall bandwidth64
