@@ -15,3 +15,6 @@ setup:
 
 logger: buildpcm
 	g++ -std=c++0x -o perf_log perf_log.cc $(PCMLIBS) -lpthread
+
+
+
