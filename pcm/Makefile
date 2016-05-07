@@ -12,9 +12,9 @@ klocwork: $(EXE)
 CXXFLAGS += -Wall -g -O3 -Wno-unknown-pragmas
 
 # rely on Linux perf support (user needs CAP_SYS_ADMIN privileges), comment out to disable
-ifneq ($(wildcard /usr/include/linux/perf_event.h),)
-CXXFLAGS += -DPCM_USE_PERF
-endif
+#ifneq ($(wildcard /usr/include/linux/perf_event.h),)
+#CXXFLAGS += -DPCM_USE_PERF
+#endif
 
 UNAME:=$(shell uname)
 
