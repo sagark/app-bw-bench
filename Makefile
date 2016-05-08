@@ -24,3 +24,6 @@ saturate:
 
 endsat:
 	killall bandwidth64
+
+tags:
+	ctags -R .

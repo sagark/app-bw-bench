@@ -76,8 +76,8 @@ public:
     long   insts = getInstructionsRetired(before, after);
     double ipc = getIPC(before, after);
     long   mem_reqs = getBytesReadFromMC(before,after)/64;
-    double mem_reqs_s = (double) mem_reqs/seconds;
     long   write_reqs = getBytesWrittenToMC(before,after)/64;
+    double mem_reqs_s = (double) (mem_reqs+write_reqs)/seconds;
     double l3_hit_rate = getL3CacheHitRatio(before,after);
     long   l3_misses = getL3CacheMisses(before,after);
     double prefetch_guess = (double) (mem_reqs-l3_misses) / l3_misses;
